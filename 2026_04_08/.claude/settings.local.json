@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python anotacoesTipo_DocString.py)",
+      "Bash(python exercicio3.py)"
+    ]
+  }
+}

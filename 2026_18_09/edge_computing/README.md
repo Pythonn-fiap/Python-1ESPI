@@ -41,6 +41,8 @@ e o **backend em Python** usando a biblioteca **Paho MQTT**.
 | `mqtt_publisher.py` | Backend Python que **envia** os comandos de ligar/desligar o LED |
 | `colab_mqtt.ipynb` | Mesmo código organizado em células, para rodar no Google Colab |
 | `requirements.txt` | Dependência (`paho-mqtt`) |
+| `diagram.json` | Circuito do Wokwi (ESP32 + DHT22 no GPIO4 + LED no GPIO2) — só é necessário se o projeto for montado do zero |
+| `libraries.txt` | Bibliotecas do Wokwi (`PubSubClient`, `DHT sensor library`, `Adafruit Unified Sensor`) |
 
 ## Número do computador (`device018`)
 
@@ -57,7 +59,10 @@ Para rodar em outra máquina, o valor precisa ser trocado (e ser **o mesmo**) em
 
 ## Passo a passo — Wokwi (ESP32)
 
-1. Abrir o projeto no Wokwi, fazer login e clicar em **Save a copy** (não editar o original).
+1. Abrir o projeto **Wokwi_ESP32_DHT22** (link enviado pelo professor), fazer login e
+   clicar em **Save a copy** (não editar o original).
+   Se precisar montar do zero: criar um projeto ESP32 novo e colar o conteúdo de
+   `esp32_dht22_mqtt.ino`, `diagram.json` e `libraries.txt` nas abas correspondentes.
 2. Conferir o `#define DEVICE_ID "device018"` (computador N18). Os tópicos e o
    `ID_MQTT` são montados a partir dele.
 3. Executar o simulador (**Play**).

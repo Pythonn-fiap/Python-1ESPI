@@ -1,0 +1,5 @@
+# Wokwi Library List
+# Cole este conteudo na aba "Library Manager" (libraries.txt) do projeto no Wokwi.
+PubSubClient
+DHT sensor library
+Adafruit Unified Sensor

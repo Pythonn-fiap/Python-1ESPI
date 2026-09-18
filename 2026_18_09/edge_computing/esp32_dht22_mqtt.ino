@@ -6,9 +6,9 @@
  *   O backend em Python (subscriber) recebe a telemetria.
  *   O backend em Python (publisher) envia comandos de liga/desliga do LED.
  *
- * ATENCAO: troque o #define DEVICE_ID pelo numero do seu computador no
- * laboratorio (ex.: "device015"). Os topicos e o ID_MQTT sao montados a
- * partir dele, entao basta alterar em um lugar.
+ * Device: device018 (computador N18 do laboratorio). Os topicos e o
+ * ID_MQTT sao montados a partir do #define DEVICE_ID, entao para usar
+ * outra maquina basta alterar aquela linha.
  *
  * Grupo (1ESPI):
  *   Bruno Carreiro Dos Santos               - RM 569423
@@ -30,9 +30,9 @@ const char* BROKER_MQTT  = "54.91.80.136";
 const int   BROKER_PORT  = 1883;
 
 // ---------------------------------------------------------------- Topicos
-// TROQUE APENAS ESTA LINHA pelo numero do seu computador (ex.: "device015").
-// O mesmo valor precisa ser usado no DEVICE_ID do codigo Python.
-#define DEVICE_ID "deviceXXX"
+// Numero do computador do laboratorio (N18). O mesmo valor precisa estar
+// no DEVICE_ID do codigo Python.
+#define DEVICE_ID "device018"
 
 const char* ID_MQTT           = "fiware_" DEVICE_ID;      // id unico no broker
 const char* TOPICO_SUBSCRIBE  = "/TEF/" DEVICE_ID "/cmd";     // comandos recebidos

@@ -21,16 +21,16 @@ e o **backend em Python** usando a biblioteca **Paho MQTT**.
 | --- | --- |
 | Broker MQTT | `54.91.80.136` |
 | Porta | `1883` |
-| Device | `deviceXXX` (número do computador usado no laboratório) |
+| Device | `device018` (computador **N18** do laboratório) |
 
 ### Tópicos MQTT
 
 | Tópico | Direção | Conteúdo |
 | --- | --- | --- |
-| `/TEF/deviceXXX/attrs` | ESP32 → Python | Estado do LED (`s\|on` / `s\|off`) |
-| `/TEF/deviceXXX/attrs/t` | ESP32 → Python | Temperatura (°C) lida no DHT22 |
-| `/TEF/deviceXXX/attrs/h` | ESP32 → Python | Umidade (%) lida no DHT22 |
-| `/TEF/deviceXXX/cmd` | Python → ESP32 | Comandos `deviceXXX@on\|` e `deviceXXX@off\|` |
+| `/TEF/device018/attrs` | ESP32 → Python | Estado do LED (`s\|on` / `s\|off`) |
+| `/TEF/device018/attrs/t` | ESP32 → Python | Temperatura (°C) lida no DHT22 |
+| `/TEF/device018/attrs/h` | ESP32 → Python | Umidade (%) lida no DHT22 |
+| `/TEF/device018/cmd` | Python → ESP32 | Comandos `device018@on\|` e `device018@off\|` |
 
 ## Arquivos
 
@@ -42,31 +42,24 @@ e o **backend em Python** usando a biblioteca **Paho MQTT**.
 | `colab_mqtt.ipynb` | Mesmo código organizado em células, para rodar no Google Colab |
 | `requirements.txt` | Dependência (`paho-mqtt`) |
 
-## Número do computador (`deviceXXX`)
+## Número do computador (`device018`)
 
-É o número da máquina do laboratório, usado para que cada aluno publique em tópicos
-diferentes no broker compartilhado. Onde encontrar:
+A máquina usada é a **N18** do laboratório, então o device é `device018` e o
+`ID_MQTT` é `fiware_018`. Cada aluno usa um número diferente para não colidir nos
+tópicos do broker compartilhado.
 
-- na **etiqueta** colada no gabinete/monitor da máquina do laboratório;
-- ou pelo **nome do computador** no Windows: `Win + R` → `cmd` → digitar `hostname`
-  (normalmente o nome termina com o número, ex.: `LAB...-015`);
-- ou perguntando ao professor na aula.
-
-Se não conseguir o número, use um valor **único** para não colidir com outro aluno —
-por exemplo os três últimos dígitos do RM (`device423`) — e confirme depois com o professor.
-
-O valor precisa ser **o mesmo** em dois lugares:
+Para rodar em outra máquina, o valor precisa ser trocado (e ser **o mesmo**) em dois lugares:
 
 | Onde | Linha |
 | --- | --- |
-| `esp32_dht22_mqtt.ino` | `#define DEVICE_ID "deviceXXX"` |
-| `mqtt_subscriber.py` / `mqtt_publisher.py` / notebook | `DEVICE_ID = "deviceXXX"` |
+| `esp32_dht22_mqtt.ino` | `#define DEVICE_ID "device018"` |
+| `mqtt_subscriber.py` / `mqtt_publisher.py` / notebook | `DEVICE_ID = "device018"` |
 
 ## Passo a passo — Wokwi (ESP32)
 
 1. Abrir o projeto no Wokwi, fazer login e clicar em **Save a copy** (não editar o original).
-2. No código, trocar o `#define DEVICE_ID "deviceXXX"` pelo número do computador
-   (ex.: `"device015"`). Os tópicos e o `ID_MQTT` são montados a partir dele.
+2. Conferir o `#define DEVICE_ID "device018"` (computador N18). Os tópicos e o
+   `ID_MQTT` são montados a partir dele.
 3. Executar o simulador (**Play**).
 4. Verificar no Serial Monitor:
    - `WiFi conectado com sucesso: Wokwi-GUEST`
@@ -81,8 +74,8 @@ Executar na seguinte ordem:
    ```bash
    pip install paho-mqtt
    ```
-2. Trocar `DEVICE_ID` para o mesmo valor usado no Wokwi (`mqtt_subscriber.py`,
-   `mqtt_publisher.py` ou a célula de configuração do notebook).
+2. Conferir que o `DEVICE_ID` é o mesmo usado no Wokwi — `device018` — em
+   `mqtt_subscriber.py`, `mqtt_publisher.py` ou na célula de configuração do notebook.
 3. Rodar o **subscriber** para receber a telemetria enviada pelo ESP32:
    ```bash
    python mqtt_subscriber.py
@@ -99,4 +92,4 @@ Executar na seguinte ordem:
 
 1. **Recebimento dos dados no Python (Subscriber)** — saída com temperatura e umidade chegando.
 2. **Recebimento dos comandos no Wokwi (LED ligado/desligado)** — Serial Monitor com
-   `- Mensagem recebida: deviceXXX@on|` e o LED aceso no simulador.
+   `- Mensagem recebida: device018@on|` e o LED aceso no simulador.

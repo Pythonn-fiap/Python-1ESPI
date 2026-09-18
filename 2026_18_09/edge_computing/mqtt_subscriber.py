@@ -23,7 +23,7 @@ import paho.mqtt.client as mqtt
 # --------------------------------------------------------------- Configuracao
 BROKER = "54.91.80.136"
 PORT = 1883
-DEVICE_ID = "deviceXXX"  # <-- troque pelo numero do seu computador (ex.: device015)
+DEVICE_ID = "device018"  # computador N18 do laboratorio
 CLIENT_ID = f"python_subscriber_{DEVICE_ID}"
 
 TOPICO_ESTADO = f"/TEF/{DEVICE_ID}/attrs"

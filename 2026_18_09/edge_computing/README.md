@@ -41,6 +41,7 @@ e o **backend em Python** usando a biblioteca **Paho MQTT**.
 | `requirements.txt` | Dependência (`paho-mqtt`) |
 | `diagram.json` | Circuito do Wokwi (ESP32 + DHT22 no GPIO4 + LED no GPIO2) — só é necessário se o projeto for montado do zero |
 | `libraries.txt` | Bibliotecas do Wokwi (`PubSubClient`, `DHT sensor library`, `Adafruit Unified Sensor`) |
+| `entrega_edge_computing.docx` | Documento da entrega, com os dados do grupo e as áreas para colar os dois prints |
 
 ## Número do computador (`device018`)
 

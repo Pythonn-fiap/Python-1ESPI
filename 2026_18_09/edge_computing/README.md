@@ -27,9 +27,7 @@ e o **backend em Python** usando a biblioteca **Paho MQTT**.
 
 | Tópico | Direção | Conteúdo |
 | --- | --- | --- |
-| `/TEF/device018/attrs` | ESP32 → Python | Estado do LED (`s\|on` / `s\|off`) |
-| `/TEF/device018/attrs/t` | ESP32 → Python | Temperatura (°C) lida no DHT22 |
-| `/TEF/device018/attrs/h` | ESP32 → Python | Umidade (%) lida no DHT22 |
+| `/TEF/device018/attrs` | ESP32 → Python | Telemetria do DHT22 no formato `t\|24.0\|h\|40.0` (temperatura em °C e umidade em %) |
 | `/TEF/device018/cmd` | Python → ESP32 | Comandos `device018@on\|` e `device018@off\|` |
 
 ## Arquivos
@@ -67,9 +65,9 @@ Para rodar em outra máquina, o valor precisa ser trocado (e ser **o mesmo**) em
    `ID_MQTT` são montados a partir dele.
 3. Executar o simulador (**Play**).
 4. Verificar no Serial Monitor:
-   - `WiFi conectado com sucesso: Wokwi-GUEST`
-   - `Conectado com sucesso ao broker MQTT!`
-   - `- Publicado -> Temperatura: ... C | Umidade: ... %`
+   - `WiFi Conectado!`
+   - `Conectando ao MQTT...Conectado!`
+   - `Publicado: t|24.0|h|40.0`
 
 ## Passo a passo — Python (Colab ou local)
 
@@ -97,4 +95,5 @@ Executar na seguinte ordem:
 
 1. **Recebimento dos dados no Python (Subscriber)** — saída com temperatura e umidade chegando.
 2. **Recebimento dos comandos no Wokwi (LED ligado/desligado)** — Serial Monitor com
-   `- Mensagem recebida: device018@on|` e o LED aceso no simulador.
+   `Comando recebido no topico /TEF/device018/cmd: device018@on|` seguido de
+   `Acao: LED LIGADO`, com o LED aceso no simulador.

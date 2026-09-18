@@ -12,10 +12,10 @@ Como usar (Colab ou local):
     pip install paho-mqtt
     python mqtt_subscriber.py
 
-Antes de executar, troque DEVICE_ID pelo numero do seu computador (ex.: "device015").
+O ESP32 publica a telemetria no formato "t|<temperatura>|h|<umidade>"
+(ex.: "t|24.0|h|40.0") no topico /TEF/device018/attrs.
 """
 
-import json
 from datetime import datetime
 
 import paho.mqtt.client as mqtt
@@ -23,52 +23,40 @@ import paho.mqtt.client as mqtt
 # --------------------------------------------------------------- Configuracao
 BROKER = "54.91.80.136"
 PORT = 1883
+KEEPALIVE = 60
 DEVICE_ID = "device018"  # computador N18 do laboratorio
 CLIENT_ID = f"python_subscriber_{DEVICE_ID}"
 
-TOPICO_ESTADO = f"/TEF/{DEVICE_ID}/attrs"
-TOPICO_TEMPERATURA = f"/TEF/{DEVICE_ID}/attrs/t"
-TOPICO_UMIDADE = f"/TEF/{DEVICE_ID}/attrs/h"
+TOPICO_TELEMETRIA = f"/TEF/{DEVICE_ID}/attrs"
 
-TOPICOS = [
-    (TOPICO_ESTADO, 0),
-    (TOPICO_TEMPERATURA, 0),
-    (TOPICO_UMIDADE, 0),
-]
 
-# Ultimas leituras recebidas (usado apenas para exibir um resumo)
-telemetria = {"estado_led": None, "temperatura": None, "umidade": None}
+def parse_telemetria(payload):
+    """Converte "t|24.0|h|40.0" em {"t": "24.0", "h": "40.0"}."""
+    partes = payload.split("|")
+    return dict(zip(partes[0::2], partes[1::2]))
 
 
 # ------------------------------------------------------------------- Callbacks
 def on_connect(client, userdata, flags, reason_code, properties=None):
     if reason_code == 0:
-        print(f"[OK] Conectado ao broker {BROKER}:{PORT}")
-        client.subscribe(TOPICOS)
-        for topico, _ in TOPICOS:
-            print(f"     inscrito em: {topico}")
+        print(f"[SUCESSO] Conectado ao Broker {BROKER}:{PORT}")
+        client.subscribe(TOPICO_TELEMETRIA)
+        print(f"[SUCESSO] Inscrito em {TOPICO_TELEMETRIA}. Aguardando leituras...")
         print("-" * 60)
     else:
-        print(f"[ERRO] Falha na conexao. Codigo: {reason_code}")
+        print(f"[FALHA] Nao foi possivel conectar. Codigo: {reason_code}")
 
 
 def on_message(client, userdata, msg):
     payload = msg.payload.decode("utf-8", errors="replace").strip()
     horario = datetime.now().strftime("%H:%M:%S")
+    leitura = parse_telemetria(payload)
 
-    if msg.topic == TOPICO_TEMPERATURA:
-        telemetria["temperatura"] = payload
-        print(f"[{horario}] Temperatura: {payload} C")
-    elif msg.topic == TOPICO_UMIDADE:
-        telemetria["umidade"] = payload
-        print(f"[{horario}] Umidade....: {payload} %")
-    elif msg.topic == TOPICO_ESTADO:
-        # O ESP32 publica "s|on" ou "s|off"
-        estado = payload.split("|")[-1]
-        telemetria["estado_led"] = estado
-        print(f"[{horario}] LED........: {estado.upper()}")
+    if "t" in leitura and "h" in leitura:
+        print(f"[NOVA LEITURA {horario}] Temperatura: {leitura['t']} C | "
+              f"Umidade: {leitura['h']} %")
     else:
-        print(f"[{horario}] {msg.topic} -> {payload}")
+        print(f"[NOVA LEITURA {horario}] {payload}")
 
 
 def on_disconnect(client, userdata, reason_code, properties=None):
@@ -90,15 +78,13 @@ def main():
     client.on_message = on_message
     client.on_disconnect = on_disconnect
 
-    print(f"Conectando ao broker {BROKER}:{PORT} como '{CLIENT_ID}'...")
-    client.connect(BROKER, PORT, keepalive=60)
+    print(f"[INICIO] Conectando ao broker {BROKER}:{PORT}...")
+    client.connect(BROKER, PORT, keepalive=KEEPALIVE)
 
     try:
         client.loop_forever()
     except KeyboardInterrupt:
-        print("\n[INFO] Encerrando o subscriber...")
-        print("Ultima telemetria recebida:")
-        print(json.dumps(telemetria, indent=2, ensure_ascii=False))
+        print("\n[FIM] Leitura interrompida pelo usuario.")
     finally:
         client.disconnect()
 

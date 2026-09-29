@@ -1,0 +1,52 @@
+{
+    "Caneta": {
+        "marca": null,
+        "preco": 10.0,
+        "quantidade": 50
+    },
+    "Caderno": {
+        "marca": "Tilibra",
+        "preco": 20.0,
+        "quantidade": 30
+    },
+    "Borracha": {
+        "marca": "Faber-Castell",
+        "preco": 5.0,
+        "quantidade": 40
+    },
+    "Lápis": {
+        "marca": "Faber-Castell",
+        "preco": 15.0,
+        "quantidade": 25
+    },
+    "Estojo": {
+        "marca": "Faber-Castell",
+        "preco": 12.0,
+        "quantidade": 35
+    },
+    "Calculadora": {
+        "marca": "Casio",
+        "preco": 30.0,
+        "quantidade": 10
+    },
+    "Lápis de Cor": {
+        "marca": "Faber-Castell",
+        "preco": 35.0,
+        "quantidade": 12
+    },
+    "Fita Adesiva": {
+        "marca": "Scotch",
+        "preco": 14.0,
+        "quantidade": 22
+    },
+    "Pincel": {
+        "marca": "Faber-Castell",
+        "preco": 40.0,
+        "quantidade": 8
+    },
+    "Bolsa": {
+        "marca": "Nike",
+        "preco": 95.0,
+        "quantidade": 32
+    }
+}

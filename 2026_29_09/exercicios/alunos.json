@@ -1,0 +1,443 @@
+{
+    "2101254": {
+        "nome": "Benício Pires",
+        "notas": [
+            3.6,
+            10.0,
+            8.5,
+            7.8
+        ]
+    },
+    "2101624": {
+        "nome": "Bruna Goncalves",
+        "notas": [
+            9.5,
+            8.0,
+            6.0,
+            5.5
+        ]
+    },
+    "2101533": {
+        "nome": "Danilo Jesus",
+        "notas": [
+            7.8,
+            8.7,
+            6.5,
+            9.0
+        ]
+    },
+    "2101969": {
+        "nome": "Ana Carolina Silva",
+        "notas": [
+            8.1,
+            7.3,
+            9.2,
+            8.8
+        ]
+    },
+    "2101779": {
+        "nome": "Lavinia Duarte",
+        "notas": [
+            9.0,
+            8.0,
+            8.5,
+            9.2
+        ]
+    },
+    "2102641": {
+        "nome": "Paulo da Conceicao",
+        "notas": [
+            7.2,
+            9.1,
+            7.9,
+            8.7
+        ]
+    },
+    "2101346": {
+        "nome": "Marcos Vinícius Sales",
+        "notas": [
+            8.5,
+            7.0,
+            9.5,
+            8.2
+        ]
+    },
+    "2102630": {
+        "nome": "Maria Vitoria Jesus",
+        "notas": [
+            9.8,
+            8.7,
+            9.0,
+            9.5
+        ]
+    },
+    "2102562": {
+        "nome": "Sarah Rodrigues",
+        "notas": [
+            7.3,
+            6.9,
+            7.1,
+            8.4
+        ]
+    },
+    "2101199": {
+        "nome": "Vitor Hugo Farias",
+        "notas": [
+            6.5,
+            8.2,
+            7.7,
+            7.8
+        ]
+    },
+    "2102356": {
+        "nome": "Mariana Alves",
+        "notas": [
+            8.9,
+            7.4,
+            9.0,
+            9.7
+        ]
+    },
+    "2101780": {
+        "nome": "Carlos Oliveira",
+        "notas": [
+            7.6,
+            8.0,
+            7.5,
+            8.3
+        ]
+    },
+    "2101985": {
+        "nome": "Eduardo Silva",
+        "notas": [
+            7.2,
+            8.0,
+            8.8,
+            8.1
+        ]
+    },
+    "2102077": {
+        "nome": "Laura Fernandes",
+        "notas": [
+            8.7,
+            7.9,
+            9.0,
+            8.5
+        ]
+    },
+    "2102241": {
+        "nome": "Isabel Santos",
+        "notas": [
+            9.5,
+            8.0,
+            9.2,
+            9.8
+        ]
+    },
+    "2102721": {
+        "nome": "Rodrigo Barbosa",
+        "notas": [
+            8.0,
+            9.3,
+            8.7,
+            8.6
+        ]
+    },
+    "2102563": {
+        "nome": "Vinicius Lima",
+        "notas": [
+            8.6,
+            8.0,
+            8.3,
+            8.8
+        ]
+    },
+    "2101422": {
+        "nome": "Gabriela Oliveira",
+        "notas": [
+            8.2,
+            7.5,
+            8.9,
+            8.4
+        ]
+    },
+    "2102810": {
+        "nome": "Lucas Mendes",
+        "notas": [
+            6.9,
+            7.1,
+            6.8,
+            7.2
+        ]
+    },
+    "2102457": {
+        "nome": "Helena Ribeiro",
+        "notas": [
+            9.1,
+            9.5,
+            9.7,
+            9.3
+        ]
+    },
+    "2101999": {
+        "nome": "Rafael Ferreira",
+        "notas": [
+            8.3,
+            8.0,
+            7.9,
+            8.5
+        ]
+    },
+    "2102088": {
+        "nome": "Ana Beatriz Azevedo",
+        "notas": [
+            7.8,
+            8.0,
+            8.2,
+            8.7
+        ]
+    },
+    "2101556": {
+        "nome": "Mateus Fernandes",
+        "notas": [
+            8.1,
+            7.7,
+            8.0,
+            8.4
+        ]
+    },
+    "2102778": {
+        "nome": "Leticia Nunes",
+        "notas": [
+            8.9,
+            8.7,
+            9.0,
+            9.2
+        ]
+    },
+    "2101320": {
+        "nome": "Julia Ribeiro",
+        "notas": [
+            8.0,
+            7.9,
+            7.5,
+            8.3
+        ]
+    },
+    "2101699": {
+        "nome": "Marcos Carvalho",
+        "notas": [
+            7.3,
+            8.0,
+            7.5,
+            8.0
+        ]
+    },
+    "2101833": {
+        "nome": "Sophia Rocha",
+        "notas": [
+            9.2,
+            9.7,
+            9.5,
+            9.0
+        ]
+    },
+    "2102122": {
+        "nome": "Matheus Cardoso",
+        "notas": [
+            7.8,
+            8.0,
+            7.7,
+            8.5
+        ]
+    },
+    "2101799": {
+        "nome": "Luiza Mendonca",
+        "notas": [
+            8.5,
+            8.2,
+            8.9,
+            8.4
+        ]
+    },
+    "2101544": {
+        "nome": "Caua Oliveira",
+        "notas": [
+            8.0,
+            7.5,
+            8.5,
+            8.2
+        ]
+    },
+    "2101345": {
+        "nome": "Vitória Souza",
+        "notas": [
+            9.0,
+            9.5,
+            9.0,
+            9.2
+        ]
+    },
+    "2101477": {
+        "nome": "Yasmin Ribeiro",
+        "notas": [
+            7.8,
+            8.0,
+            8.2,
+            8.6
+        ]
+    },
+    "2102221": {
+        "nome": "Joao Oliveira",
+        "notas": [
+            8.6,
+            8.0,
+            8.7,
+            8.3
+        ]
+    },
+    "2102388": {
+        "nome": "Luana Azevedo",
+        "notas": [
+            7.9,
+            8.0,
+            7.9,
+            8.1
+        ]
+    },
+    "2101900": {
+        "nome": "Renan Silva",
+        "notas": [
+            7.1,
+            7.8,
+            7.5,
+            7.3
+        ]
+    },
+    "2101432": {
+        "nome": "Gustavo Carvalho",
+        "notas": [
+            8.0,
+            7.5,
+            8.0,
+            7.9
+        ]
+    },
+    "2101622": {
+        "nome": "Nina Azevedo",
+        "notas": [
+            9.0,
+            9.5,
+            9.1,
+            9.2
+        ]
+    },
+    "2101955": {
+        "nome": "Pedro Rocha",
+        "notas": [
+            7.6,
+            7.8,
+            8.1,
+            8.0
+        ]
+    },
+    "2101777": {
+        "nome": "Mariana Costa",
+        "notas": [
+            8.4,
+            8.1,
+            8.3,
+            8.5
+        ]
+    },
+    "2102255": {
+        "nome": "Felipe Oliveira",
+        "notas": [
+            8.7,
+            9.0,
+            9.0,
+            9.2
+        ]
+    },
+    "2102341": {
+        "nome": "Eloa Pereira",
+        "notas": [
+            7.5,
+            8.0,
+            7.8,
+            8.0
+        ]
+    },
+    "2101766": {
+        "nome": "Rodrigo Ribeiro",
+        "notas": [
+            8.3,
+            8.1,
+            8.2,
+            8.4
+        ]
+    },
+    "2102890": {
+        "nome": "Livia Sousa",
+        "notas": [
+            8.7,
+            9.0,
+            8.9,
+            9.0
+        ]
+    },
+    "2101677": {
+        "nome": "Guilherme Castro",
+        "notas": [
+            8.2,
+            7.9,
+            8.0,
+            8.3
+        ]
+    },
+    "2102155": {
+        "nome": "Bianca Carvalho",
+        "notas": [
+            8.0,
+            8.0,
+            7.9,
+            8.2
+        ]
+    },
+    "2102099": {
+        "nome": "Sofia Ferreira",
+        "notas": [
+            9.0,
+            9.5,
+            9.2,
+            9.0
+        ]
+    },
+    "2101343": {
+        "nome": "Larissa Oliveira",
+        "notas": [
+            4.5,
+            3.7,
+            4.1,
+            4.9
+        ]
+    },
+    "2101445": {
+        "nome": "Felipe Souza",
+        "notas": [
+            5.2,
+            4.9,
+            5.8,
+            5.6
+        ]
+    },
+    "2101577": {
+        "nome": "Amanda Mendes",
+        "notas": [
+            4.7,
+            4.5,
+            4.1,
+            4.2
+        ]
+    }
+}

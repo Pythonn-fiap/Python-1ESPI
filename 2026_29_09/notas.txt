@@ -1,0 +1,49 @@
+2101254,Benício Pires,3.6,10.0,8.5,7.8
+2101624,Bruna Goncalves,9.5,8.0,6.0,5.5
+2101533,Danilo Jesus,7.8,8.7,6.5,9.0
+2101969,Ana Carolina Silva,8.1,7.3,9.2,8.8
+2101779,Lavinia Duarte,9.0,8.0,8.5,9.2
+2102641,Paulo da Conceicao,7.2,9.1,7.9,8.7
+2101346,Marcos Vinícius Sales,8.5,7.0,9.5,8.2
+2102630,Maria Vitoria Jesus,9.8,8.7,9.0,9.5
+2102562,Sarah Rodrigues,7.3,6.9,7.1,8.4
+2101199,Vitor Hugo Farias,6.5,8.2,7.7,7.8
+2102356,Mariana Alves,8.9,7.4,9.0,9.7
+2101780,Carlos Oliveira,7.6,8.0,7.5,8.3
+2101985,Eduardo Silva,7.2,8.0,8.8,8.1
+2102077,Laura Fernandes,8.7,7.9,9.0,8.5
+2102241,Isabel Santos,9.5,8.0,9.2,9.8
+2102721,Rodrigo Barbosa,8.0,9.3,8.7,8.6
+2102563,Vinicius Lima,8.6,8.0,8.3,8.8
+2101422,Gabriela Oliveira,8.2,7.5,8.9,8.4
+2102810,Lucas Mendes,6.9,7.1,6.8,7.2
+2102457,Helena Ribeiro,9.1,9.5,9.7,9.3
+2101999,Rafael Ferreira,8.3,8.0,7.9,8.5
+2102088,Ana Beatriz Azevedo,7.8,8.0,8.2,8.7
+2101556,Mateus Fernandes,8.1,7.7,8.0,8.4
+2102778,Leticia Nunes,8.9,8.7,9.0,9.2
+2101320,Julia Ribeiro,8.0,7.9,7.5,8.3
+2101699,Marcos Carvalho,7.3,8.0,7.5,8.0
+2101833,Sophia Rocha,9.2,9.7,9.5,9.0
+2102122,Matheus Cardoso,7.8,8.0,7.7,8.5
+2101799,Luiza Mendonca,8.5,8.2,8.9,8.4
+2101544,Caua Oliveira,8.0,7.5,8.5,8.2
+2101345,Vitória Souza,9.0,9.5,9.0,9.2
+2101477,Yasmin Ribeiro,7.8,8.0,8.2,8.6
+2102221,Joao Oliveira,8.6,8.0,8.7,8.3
+2102388,Luana Azevedo,7.9,8.0,7.9,8.1
+2101900,Renan Silva,7.1,7.8,7.5,7.3
+2101432,Gustavo Carvalho,8.0,7.5,8.0,7.9
+2101622,Nina Azevedo,9.0,9.5,9.1,9.2
+2101955,Pedro Rocha,7.6,7.8,8.1,8.0
+2101777,Mariana Costa,8.4,8.1,8.3,8.5
+2102255,Felipe Oliveira,8.7,9.0,9.0,9.2
+2102341,Eloa Pereira,7.5,8.0,7.8,8.0
+2101766,Rodrigo Ribeiro,8.3,8.1,8.2,8.4
+2102890,Livia Sousa,8.7,9.0,8.9,9.0
+2101677,Guilherme Castro,8.2,7.9,8.0,8.3
+2102155,Bianca Carvalho,8.0,8.0,7.9,8.2
+2102099,Sofia Ferreira,9.0,9.5,9.2,9.0
+2101343,Larissa Oliveira,4.5,3.7,4.1,4.9
+2101445,Felipe Souza,5.2,4.9,5.8,5.6
+2101577,Amanda Mendes,4.7,4.5,4.1,4.2

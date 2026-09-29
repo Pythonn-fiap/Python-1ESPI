@@ -1,0 +1,123 @@
+{
+  "squadName": "Guardians of Justice",
+  "homeTown": "Gotham City",
+  "formed": 2020,
+  "secretBase": "Justice Fortress",
+  "active": true,
+  "members": [
+    {
+      "name": "Captain Valor",
+      "age": 35,
+      "secretIdentity": "John Steele",
+      "powers": ["Super strength", "Flight", "Invulnerability"]
+    },
+    {
+      "name": "Mystic Shadow",
+      "age": 27,
+      "secretIdentity": "Luna Night",
+      "powers": ["Shadow manipulation", "Invisibility", "Telepathy"]
+    },
+    {
+      "name": "Blazing Comet",
+      "age": 30,
+      "secretIdentity": "Eli Star",
+      "powers": ["Fire control", "Super speed", "Flight"]
+    },
+    {
+      "name": "Steel Sentinel",
+      "age": 42,
+      "secretIdentity": "Rick Iron",
+      "powers": ["Enhanced durability", "Technological expertise", "Hand-to-hand combat"]
+    },
+    {
+      "name": "Thunder Strike",
+      "age": 29,
+      "secretIdentity": "Zara Bolt",
+      "powers": ["Lightning control", "Super agility", "Enhanced reflexes"]
+    },
+    {
+      "name": "Nature's Guardian",
+      "age": 36,
+      "secretIdentity": "Gaia Green",
+      "powers": ["Plant manipulation", "Healing abilities", "Animal communication"]
+    },
+    {
+      "name": "Icebreaker",
+      "age": 31,
+      "secretIdentity": "Frost King",
+      "powers": ["Ice control", "Cryokinesis", "Cold resistance"]
+    },
+    {
+      "name": "Quantum Ace",
+      "age": 24,
+      "secretIdentity": "Jay Quantum",
+      "powers": ["Time manipulation", "Teleportation", "Energy blasts"]
+    },
+    {
+      "name": "Phantom Blade",
+      "age": 28,
+      "secretIdentity": "Kira Sable",
+      "powers": ["Stealth", "Master of blades", "Enhanced agility"]
+    },
+    {
+      "name": "Firehawk",
+      "age": 40,
+      "secretIdentity": "Ava Blaze",
+      "powers": ["Fire manipulation", "Flight", "Thermal vision"]
+    },
+    {
+      "name": "Titan",
+      "age": 45,
+      "secretIdentity": "Maximus Force",
+      "powers": ["Giant size", "Super strength", "Earthquake creation"]
+    },
+    {
+      "name": "Gale Force",
+      "age": 32,
+      "secretIdentity": "Tara Wind",
+      "powers": ["Wind manipulation", "Flight", "Super speed"]
+    },
+    {
+      "name": "Celestial Sage",
+      "age": 300,
+      "secretIdentity": "Orion Star",
+      "powers": ["Cosmic energy manipulation", "Telekinesis", "Immortality"]
+    },
+    {
+      "name": "Techno Wizard",
+      "age": 29,
+      "secretIdentity": "Dex Code",
+      "powers": ["Technological manipulation", "Hacking", "Gadget creation"]
+    },
+    {
+      "name": "Echo",
+      "age": 26,
+      "secretIdentity": "Sam Sound",
+      "powers": ["Sound manipulation", "Sonar vision", "Vibration control"]
+    },
+    {
+      "name": "Silver Shield",
+      "age": 38,
+      "secretIdentity": "Sarah Silver",
+      "powers": ["Force field generation", "Super strength", "Combat skills"]
+    },
+    {
+      "name": "The Enforcer",
+      "age": 34,
+      "secretIdentity": "Jake Justice",
+      "powers": ["Enhanced strength", "Expert martial artist", "Tactical genius"]
+    },
+    {
+      "name": "Moonlit Archer",
+      "age": 22,
+      "secretIdentity": "Ella Bow",
+      "powers": ["Archery skills", "Night vision", "Super agility"]
+    },
+    {
+      "name": "Gravity Master",
+      "age": 37,
+      "secretIdentity": "Felix Gravity",
+      "powers": ["Gravity manipulation", "Flight", "Super strength"]
+    }
+  ]
+}
